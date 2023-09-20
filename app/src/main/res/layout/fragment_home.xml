@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="4.5"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="end"
+                android:text="Welcome Back! "
+                android:textColor="@color/green"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="4"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="start"
+                android:text="Rahul"
+                android:textColor="@color/orange"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/allerta"
+            android:text="Hope you are doing well !"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/vertical_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/vertical_line" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_for_stages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/temp2"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="100dp"
+            android:layout_toRightOf="@+id/vertical_line"
+            android:background="#f5fbfc" />
+
+
+    </RelativeLayout>
+</FrameLayout>

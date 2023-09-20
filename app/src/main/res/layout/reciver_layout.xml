@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pro"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_toRightOf="@id/pro"
+        android:background="@drawable/reciver_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recivertextset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:padding="7dp"
+            android:text="Techcoder"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recivertextset"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/pro"
+            android:text="12-06-2004 32 54 63"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
